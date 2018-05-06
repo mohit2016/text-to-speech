@@ -1,0 +1,56 @@
+﻿<html>
+    <head>
+        <title>
+            text to speech
+        </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+    <style>
+ .di{
+    padding: 10px;
+    margin-left: 30%;
+    width: 35%;
+    height: 400px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Arial;
+    background-image: linear-gradient(#fff, #d3d3d3);
+        }
+.say{
+    margin-top:-50px;
+}
+        </style>
+
+
+    </head>
+<body>
+
+<div id="container">
+    <br><br>
+    
+    <div class="di">
+    <h1 >Text to Speech</h1><br><br><br><br><br>
+          <form  >
+    <div class="form-group row">
+            <div class="col-xs-10" style="margin-left:6%">
+         <input type="text" id="text" placeholder="Enter text" class="form-control input-lg" ><br><br>
+        <!--<textarea col=100  rows=5 id="text" class="form-control col-sm-2"></textarea>-->
+                   <br><br> <button id="gspeech" class="say btn btn-primary"> 🔊 Say It</button>
+
+      </div>
+    </div>
+  </form>
+
+    </div>
+
+<audio id="player1" src="" class="speech" hidden></audio>
+</div>
+</body>
+</html>
+
+
